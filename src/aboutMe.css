@@ -1,0 +1,43 @@
+/* Ensure no default margin or padding affects the body or html */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-me-container {
+    display: flex;
+    height: 75vh; /* Full height of the viewport */
+}
+
+.about-me-left, .about-me-right {
+    flex: 1; /* Each side takes up half of the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Optional padding */
+}
+
+.about-me-left {
+    background-color: white;
+    color: #333; /* Text color for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-me-right {
+    /* background-color: #93C4D1;
+    position: relative;
+    overflow: hidden; */
+}
+
+.scrapbook-photo {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #fff; /* Optional border for scrapbook effect */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}

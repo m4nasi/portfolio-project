@@ -1,0 +1,39 @@
+/* Ensure no default margin or padding affects the body or html */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%; /* Full height to ensure the footer sticks to the bottom */
+}
+
+/* Flexbox layout for the body to handle full height and footer positioning */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height to push footer to bottom */
+}
+
+/* Ensure main content takes up available space */
+.main-content {
+    flex: 1; /* This will make sure the content area grows to push the footer down */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #18363E; /* Match the navbar color or choose a different color */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%; /* Ensure it spans the full width */
+    position: relative; /* Ensure it's positioned relative to its normal flow */
+    bottom: 0;
+}
+  
+.footer a {
+    color: #93C4D1; /* Match the color of the About Me section or choose a contrasting color */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
